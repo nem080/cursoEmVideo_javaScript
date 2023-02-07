@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href=".../css/estilo.css">
+        <script type="text/javascript" src="../javaScript/Script008.js"></script>
+        <title>aula de js 010</title>
+    </head>
+<body>
+    <h1>Aula de js 010 <br> exe 008 Eventos DOM<strong>DOM</strong> em js</h1>
+    
+    <!-- pode se usar os evento dentro da div id="area" onclick="clicar()" onmouseenter= "entrar()" onmouseout= "sair()> -->
+
+   <div id="area" >  
+    INTERAJA....
+   </div>
+
+   <script>
+         var a = window.document.getElementById('area');
+         a.addEventListener("click", clicar);
+         a.addEventListener('mouseenter', entrar)
+         a.addEventListener('mouseout', sair);
+         a.addEventListener('dblclick', duploClick)
+
+        //  function clicar() {
+
+        //      a.innerText = 'mudou para clicou....';
+        //      a.style.backgroundColor = 'red';
+        //  }
+
+        //  function entrar() {
+        //      // var a = window.document.getElementById('area');
+        //      a.innerText = 'entrou..';
+             
+        //  }
+
+        //  function sair() {
+        //      // var a = window.document.getElementById('area');
+        //      a.innerText = 'Saiu...';
+        //      a.style.background = 'rgb(16, 200, 221)';
+        //  }
+
+        
+   </script>
+</body>
+</html> 
